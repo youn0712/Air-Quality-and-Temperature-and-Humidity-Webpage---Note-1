@@ -1,107 +1,107 @@
 body {
-    font-family: 'Microsoft JhengHei', Arial, sans-serif; // 設定主要字體為微軟正黑體，備用為 Arial 和 sans-serif
-    margin: 0; // 移除預設外距
-    padding: 20px; // 四周內距設為 20px
-    background-color: #f0f2f5; // 背景色為淡灰藍
+    font-family: 'Microsoft JhengHei', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
 }
 
 .container {
-    max-width: 1200px; // 最大寬度為 1200px
-    margin: 0 auto; // 水平置中
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
-    text-align: center; // 標題文字置中
-    color: #333; // 深灰色文字
+    text-align: center;
+    color: #333;
 }
 
 .status-container {
-    display: flex; // 使用 flex 排版
-    justify-content: space-between; // 左右兩側對齊
-    align-items: center; // 垂直置中
-    margin: 20px 0; // 上下外距 20px
-    padding: 10px; // 內距 10px
-    background-color: #fff; // 白色背景
-    border-radius: 8px; // 圓角 8px
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); // 淡陰影
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 #connect-button {
-    padding: 10px 20px; // 內距
-    background-color: #4CAF50; // 綠色背景
-    color: white; // 白色文字
-    border: none; // 無邊框
-    border-radius: 4px; // 圓角 4px
-    cursor: pointer; // 滑鼠移上變為手型
-    transition: background-color 0.3s; // 背景色變化動畫 0.3 秒
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #connect-button:hover {
-    background-color: #45a049; // 滑鼠移上時改為稍深的綠色
+    background-color: #45a049;
 }
 
 .data-grid {
-    display: grid; // 使用 Grid 排版
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // 自動調整欄數，最小 250px
-    gap: 20px; // 欄位間距 20px
-    margin-bottom: 30px; // 下方外距 30px
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .data-card {
-    background-color: white; // 白底
-    padding: 20px; // 內距
-    border-radius: 8px; // 圓角
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); // 陰影
-    text-align: center; // 文字置中
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .data-card h2 {
-    margin: 0; // 無外距
-    color: #666; // 淡灰色文字
-    font-size: 1.2em; // 字體大小 1.2 倍
+    margin: 0;
+    color: #666;
+    font-size: 1.2em;
 }
 
 .data-card p {
-    margin: 10px 0 0; // 上外距 10px，其他為 0
-    font-size: 1.8em; // 字體大小較大
-    font-weight: bold; // 粗體
-    color: #333; // 深灰色文字
+    margin: 10px 0 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
 }
 
 .chart-container {
-    background-color: white; // 白底
-    padding: 20px; // 內距
-    border-radius: 8px; // 圓角
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); // 陰影
-    margin-top: 20px; // 上外距
-    display: grid; // Grid 排版
-    grid-template-columns: 1fr 1fr; // 兩欄各佔一半
-    gap: 20px; // 欄距 20px
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .chart-wrapper {
-    padding: 15px; // 內距
-    border: 1px solid #eee; // 淡灰色邊框
-    border-radius: 8px; // 圓角
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
 }
 
 .chart-wrapper h3 {
-    margin: 0 0 15px 0; // 下外距 15px
-    color: #333; // 深灰文字
-    text-align: center; // 文字置中
+    margin: 0 0 15px 0;
+    color: #333;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .chart-container {
-        grid-template-columns: 1fr; // 螢幕小於 768px 時只顯示單欄
+        grid-template-columns: 1fr;
     }
     .data-grid {
-        grid-template-columns: repeat(2, 1fr); // 顯示兩欄資料卡
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .data-grid {
-        grid-template-columns: 1fr; // 螢幕小於 480px 時資料卡單欄顯示
+        grid-template-columns: 1fr;
     }
-}
+} 
