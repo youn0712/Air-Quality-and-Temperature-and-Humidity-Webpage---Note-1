@@ -1,60 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- 定義 HTML5 文件類型 -->
+<html lang="en"> <!-- 設定網頁語言為英文 -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Air Quality Monitoring System</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- 設定網頁編碼為 UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 響應式網頁設定 -->
+    <title>Air Quality Monitoring System</title> <!-- 網頁標題 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 引入外部 CSS 樣式 -->
 </head>
 <body>
-    <div class="container">
-        <h1>Air Quality Monitoring System</h1>
+    <div class="container"> <!-- 主容器 -->
+        <h1>Air Quality Monitoring System</h1> <!-- 頁面標題 -->
         
-        <div class="status-container">
-            <div id="connection-status">Bluetooth Status: Not Connected</div>
-            <button id="connect-button">Connect Bluetooth</button>
+        <div class="status-container"> <!-- 藍牙狀態區塊 -->
+            <div id="connection-status">Bluetooth Status: Not Connected</div> <!-- 顯示藍牙連線狀態 -->
+            <button id="connect-button">Connect Bluetooth</button> <!-- 藍牙連線按鈕 -->
         </div>
 
-        <div class="data-grid">
+        <div class="data-grid"> <!-- 感測數據顯示網格 -->
             <div class="data-card">
                 <h2>PM1.0</h2>
-                <p id="pm1_0">-- μg/m³</p>
+                <p id="pm1_0">-- μg/m³</p> <!-- PM1.0 數值 -->
             </div>
             <div class="data-card">
                 <h2>PM2.5</h2>
-                <p id="pm2_5">-- μg/m³</p>
+                <p id="pm2_5">-- μg/m³</p> <!-- PM2.5 數值 -->
             </div>
             <div class="data-card">
                 <h2>PM10</h2>
-                <p id="pm10_0">-- μg/m³</p>
+                <p id="pm10_0">-- μg/m³</p> <!-- PM10 數值 -->
             </div>
             <div class="data-card">
                 <h2>Temperature</h2>
-                <p id="temperature">-- °C</p>
+                <p id="temperature">-- °C</p> <!-- 溫度數值 -->
             </div>
             <div class="data-card">
                 <h2>Humidity</h2>
-                <p id="humidity">-- %</p>
+                <p id="humidity">-- %</p> <!-- 濕度數值 -->
             </div>
             <div class="data-card">
                 <h2>Status</h2>
-                <p id="status">--</p>
+                <p id="status">--</p> <!-- 空氣品質狀態 -->
             </div>
         </div>
 
-        <div class="chart-container">
+        <div class="chart-container"> <!-- 圖表區塊 -->
             <div class="chart-wrapper">
-                <h3>PM Values History</h3>
-                <canvas id="pmChart"></canvas>
+                <h3>PM Values History</h3> <!-- PM 數值歷史圖表標題 -->
+                <canvas id="pmChart"></canvas> <!-- PM 圖表畫布 -->
             </div>
             <div class="chart-wrapper">
-                <h3>Temperature & Humidity History</h3>
-                <canvas id="tempHumChart"></canvas>
+                <h3>Temperature & Humidity History</h3> <!-- 溫濕度歷史圖表標題 -->
+                <canvas id="tempHumChart"></canvas> <!-- 溫濕度圖表畫布 -->
             </div>
         </div>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- 引入 Chart.js 圖表套件 -->
+    <script src="script.js"></script> <!-- 引入自訂的 JavaScript 檔案 -->
 </body>
-</html> 
+</html>
