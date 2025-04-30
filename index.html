@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Monitoring System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Monitoring System</h1>
+        
+        <div class="status-container">
+            <div id="connection-status">Bluetooth Status: Not Connected</div>
+            <button id="connect-button">Connect Bluetooth</button>
+        </div>
+
+        <div class="data-grid">
+            <div class="data-card">
+                <h2>PM1.0</h2>
+                <p id="pm1_0">-- μg/m³</p>
+            </div>
+            <div class="data-card">
+                <h2>PM2.5</h2>
+                <p id="pm2_5">-- μg/m³</p>
+            </div>
+            <div class="data-card">
+                <h2>PM10</h2>
+                <p id="pm10_0">-- μg/m³</p>
+            </div>
+            <div class="data-card">
+                <h2>Temperature</h2>
+                <p id="temperature">-- °C</p>
+            </div>
+            <div class="data-card">
+                <h2>Humidity</h2>
+                <p id="humidity">-- %</p>
+            </div>
+            <div class="data-card">
+                <h2>Status</h2>
+                <p id="status">--</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <h3>PM Values History</h3>
+                <canvas id="pmChart"></canvas>
+            </div>
+            <div class="chart-wrapper">
+                <h3>Temperature & Humidity History</h3>
+                <canvas id="tempHumChart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
